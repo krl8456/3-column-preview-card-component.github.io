@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('fonts/LexendDeca-Regular.ttf');
+}
+@font-face {
+    font-family: 'Big Shoulder Display';
+    src: url('fonts/BigShouldersDisplay-Regular.ttf');
+}
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --font-size: 15px;
+}
+html, body, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca';
+    color: var(--transparent-white);
+    padding: 0 2em;
+}
+#content {
+    max-height: 90%;
+}
+section {
+    padding: 3em;
+    min-height: 20em;
+    max-width: 20em;
+}
+#section1 {
+    background-color: var(--bright-orange);
+}
+#section2 {
+    background-color: var(--dark-cyan);
+}
+#section3 {
+    background-color: var(--very-dark-cyan);
+}
+img {
+    width: 30%;
+}
+h2 {
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulder Display';
+    font-size: 2.4em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-block: 1em;
+}
+button {
+    display: block;
+    margin-top: 2em;
+    padding: 1em 2em;
+    border-radius: 2em;
+    border: 0;
+    font-size: clamp(0.5em, 2vw, 1em);
+}
+button:hover {
+    border: 1px solid var(--very-light-gray);
+}
+#button1 {
+    color: var(--bright-orange);
+}
+#button1:hover {
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+}
+#button2 {
+    color: var(--dark-cyan);
+}
+#button2:hover {
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray);
+}
+#button3 {
+    color: var(--very-dark-cyan);
+}
+#button3:hover {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray);
+}
+#button1, #button2, #button3 {
+    font-weight: 600;
+}
+footer {
+    color: black;
+    text-align: center;
+}
+section, footer {
+    font-size: clamp(0.4em, 2vw, 1.5em);
+}
+@media (min-width: 681px) {
+    main {
+        margin-block: 10em;
+        display: flex;
+    }
+    section {
+        position: relative;
+        min-height: 23em;
+        min-width: 20em;
+    }
+    button {
+        position: absolute;
+        bottom: 3em;
+    }
+    section, footer {
+        font-size: clamp(0.4em, 1vw, 1.5em);
+    }
+}
