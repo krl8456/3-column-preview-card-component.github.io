@@ -71,21 +71,22 @@ button:hover {
 }
 #button1:hover {
     background-color: var(--bright-orange);
-    color: var(--very-light-gray);
 }
 #button2 {
     color: var(--dark-cyan);
 }
 #button2:hover {
     background-color: var(--dark-cyan);
-    color: var(--very-light-gray);
 }
 #button3 {
     color: var(--very-dark-cyan);
 }
 #button3:hover {
     background-color: var(--very-dark-cyan);
+}
+#button1:hover, #button2:hover, #button3:hover {
     color: var(--very-light-gray);
+    cursor: pointer;
 }
 #button1, #button2, #button3 {
     font-weight: 600;
